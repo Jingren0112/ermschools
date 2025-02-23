@@ -2,14 +2,11 @@
 import { makeStyles } from "@griffel/react"
 
 export const useStyle = makeStyles({
-    page: {
-        display: 'flex',
-        flexDirection: 'column',
-        background: 'white'
-    },
     header: {
         display: 'flex',
         flexDirection: 'column',
+    },
+    headerTextSection: {
         background: '#008bbf',
         color: 'white',
         padding: '10px 30px'
