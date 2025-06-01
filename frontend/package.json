@@ -2,9 +2,9 @@
   "name": "ermschools_frontend",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "yarn@4.6.0",
+  "packageManager": "yarn@4.9.1",
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

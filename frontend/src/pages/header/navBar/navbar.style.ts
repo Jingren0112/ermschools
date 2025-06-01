@@ -10,13 +10,15 @@ export const useStyle = makeStyles({
         height: '2rem',
         alignSelf: 'flex-end',
         marginLeft: '2rem',
-        marginRight: '2rem'
+        marginRight: '2rem',
+        alignItems: 'center',
+        gap: '1rem'
     },
     menuButtonGroup: {
         display: 'flex',
         columnGap: '1rem'
     },
-    meanuButton: {
+    menuButton: {
         backgroundColor: 'transparent',
         color: 'black',
         border: 'none',
@@ -24,5 +26,33 @@ export const useStyle = makeStyles({
             borderBottomStyle: 'solid',
             borderBottomColor: 'blue'
         }
+    },
+    menuLanguageSwitchGroup: {
+        display: 'flex',
+        flexDirection: 'row',
+        gap: '0.5rem'
+    },
+    menuActionButtonGroup: {
+        display: 'flex',
+        flexDirection: 'row',
+        gap: '0.75rem'
+    },
+    shopButton: {
+        minWidth: '5rem',
+        minHeight: '2rem',
+        backgroundColor: '#E88D31',
+        color: 'white',
+        borderRadius: '0.5rem',
+        padding: '1.5rem, 1.5rem, 0.5rem, 0.5rem',
+        border: 'none'
+    },
+    donateButton: {
+        minWidth: '5rem',
+        minHeight: '2rem',
+        backgroundColor: '#387A3D',
+        color: 'white',
+        borderRadius: '0.5rem',
+        padding: '1.5rem, 1.5rem, 0.5rem, 0.5rem',
+        border: 'none'
     }
 })

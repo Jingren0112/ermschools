@@ -2,18 +2,28 @@
 
 import { useStyle } from "./navbar.style"
 import Link from 'next/link'
+import str from './string.json'
 
 export const NavBar = () => {
     const style = useStyle()
     return (
         <div className={ style.menuGroup }>
             <div className={ style.menuButtonGroup }>
-                <Link href="/" className={ style.meanuButton }>Home</Link>
-                <Link href="/intro" className={ style.meanuButton }> What we do</Link>
-                <Link href="/reports" className={ style.meanuButton }> Research and reports</Link>
-                <Link href="/stories" className={ style.meanuButton }> Stories </Link>
-                <Link href="/who" className={ style.meanuButton }> Who we are</Link>
-                <Link href="/action" className={ style.meanuButton }> Take action</Link>
+                <Link href="/about" className={ style.menuButton }>{ str["en-us"].about } </Link>
+                <Link href="/blog" className={ style.menuButton }> { str["en-us"].blog }</Link>
+            </div>
+            <div className={ style.menuLanguageSwitchGroup }>
+                <div>|</div>
+                <Link href="">EN</Link>
+                <Link href="">中</Link>
+            </div>
+            <div className={ style.menuActionButtonGroup }>
+                <button className={ style.shopButton }>
+                    { str["en-us"].shop }
+                </button>
+                <button className={ style.donateButton }>
+                    { str["en-us"].Donate }
+                </button>
             </div>
         </div>
     )
