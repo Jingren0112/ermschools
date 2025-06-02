@@ -14,8 +14,8 @@ export const NavBar = () => {
             </div>
             <div className={ style.menuLanguageSwitchGroup }>
                 <div>|</div>
-                <Link href="">EN</Link>
-                <Link href="">中</Link>
+                <Link className={ style.linkText } href="">EN</Link>
+                <Link className={ style.linkText } href="">中</Link>
             </div>
             <div className={ style.menuActionButtonGroup }>
                 <button className={ style.shopButton }>

@@ -24,13 +24,17 @@ export const useStyle = makeStyles({
         border: 'none',
         '&:hover': {
             borderBottomStyle: 'solid',
-            borderBottomColor: 'blue'
         }
     },
     menuLanguageSwitchGroup: {
         display: 'flex',
         flexDirection: 'row',
         gap: '0.5rem'
+    },
+    linkText: {
+        fontSize: '1rem',
+        lineHeight: '100%',
+        color: '#757575'
     },
     menuActionButtonGroup: {
         display: 'flex',
