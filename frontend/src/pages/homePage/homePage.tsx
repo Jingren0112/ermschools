@@ -1,14 +1,14 @@
 'use client'
 
 import Image from "next/image"
-import { Header } from "../components/header/header"
+import { Header } from "../../components/header/header"
 import { useStyle } from "./homePage.style"
 import introImage from './images/Statistic_intro.svg'
-import { Card } from "../components/card/card"
-import { cardContentType } from "../components/card/util"
+import { Card } from "../../components/card/card"
+import { cardContentType } from "../../components/card/util"
 import { cardContent } from "./utils"
 import str from './string.json'
-import { Footer } from "../components/footer/footer"
+import { Footer } from "../../components/footer/footer"
 
 export function HomePage() {
   const style = useStyle()

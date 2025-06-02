@@ -1,6 +1,6 @@
 'use strict'
 
-import { cardContentType } from "../components/card/util";
+import { cardContentType } from "../../components/card/util";
 import avatar from './images/avatar.svg'
 import bodyHeader1 from './images/bodyHeader1.svg'
 import bodyHeader2 from './images/bodyHeader2.svg'
