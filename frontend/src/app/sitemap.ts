@@ -4,6 +4,8 @@ import { host } from '@/config';
 import { routing } from '@/i18n/routing';
 import { getPathname } from '@/i18n/navigation';
 
+export const dynamic = 'force-static'
+
 export default function sitemap(): MetadataRoute.Sitemap {
     return [...getEntries('/'), ...getEntries('/pathnames')];
 }
