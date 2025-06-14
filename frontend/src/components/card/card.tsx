@@ -1,7 +1,5 @@
-'use strict'
 
 import { useStyle } from './card.style'
-import react from 'react'
 import Image from 'next/image'
 import { cardContentType } from './util'
 

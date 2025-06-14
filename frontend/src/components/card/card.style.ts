@@ -1,4 +1,3 @@
-'use strict'
 
 import { makeStyles, shorthands } from "@griffel/react"
 
