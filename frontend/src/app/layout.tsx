@@ -1,3 +1,4 @@
+import { routing } from '@/i18n/routing';
 import { ReactNode } from 'react';
 
 type Props = {
@@ -8,4 +9,8 @@ type Props = {
 // is required, even if it's just passing children through.
 export default function RootLayout({ children }: Props) {
     return children;
+}
+
+export function generateStaticParams() {
+    return routing.locales.map((locale) => ({ locale }))
 }
