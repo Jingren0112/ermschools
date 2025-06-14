@@ -32,14 +32,6 @@ export const useStyle = makeStyles({
         flexDirection: 'row',
         gap: '0.5rem'
     },
-    linkText: {
-        fontSize: '1rem',
-        lineHeight: '100%',
-        color: '#757575',
-        backgroundColor: 'transparent',
-        border: 'none',
-        cursor: 'pointer',
-    },
     menuActionButtonGroup: {
         display: 'flex',
         flexDirection: 'row',
