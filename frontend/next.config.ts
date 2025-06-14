@@ -6,7 +6,10 @@ const isGithubPages = process.env.GITHUB_PAGES === 'true'
 const nextConfig: NextConfig = {
     output: 'export',
     basePath: isGithubPages ? '/ermschools' : '',
-    assetPrefix: isGithubPages ? '/ermschools' : ''
+    assetPrefix: isGithubPages ? '/ermschools' : '',
+    images: {
+        unoptimized: true
+    }
 }
 
 const withNextIntl = createNextIntlPlugin()
