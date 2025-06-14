@@ -1,12 +1,10 @@
 import { cardContentType } from "../../card/util";
-import avatar from './images/avatar.svg'
-import bodyHeader1 from './images/bodyHeader1.svg'
-import bodyHeader2 from './images/bodyHeader2.svg'
-import bodyHeader3 from './images/bodyHeader3.svg'
-import { useTranslations } from "next-intl";
+import avatar from './images/avatar.svg';
+import bodyHeader1 from './images/bodyHeader1.svg';
+import bodyHeader2 from './images/bodyHeader2.svg';
+import bodyHeader3 from './images/bodyHeader3.svg';
 
-export function getCardContent(): cardContentType[] {
-    const t = useTranslations('homePage')
+export function getCardContent(t: (key: string) => string): cardContentType[] {
     return [
         {
             imgSrc: bodyHeader1,
@@ -29,5 +27,5 @@ export function getCardContent(): cardContentType[] {
             avatarSrc: avatar,
             category: t("section4ThirdCardCategory")
         },
-    ]
+    ];
 }

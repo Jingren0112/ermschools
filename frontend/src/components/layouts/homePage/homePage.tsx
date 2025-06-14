@@ -89,7 +89,7 @@ export const HomePage = () => {
         {/* Cards Section */ }
         <div className={ style.bodySection4 }>
           <div className={ style.bodySection4BodyContainer }>
-            { getCardContent().map((card: cardContentType, index: number) => {
+            { getCardContent(t).map((card: cardContentType, index: number) => {
               return (
                 <Card key={ index } content={ card } />
               )

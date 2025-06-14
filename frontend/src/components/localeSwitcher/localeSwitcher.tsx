@@ -20,7 +20,7 @@ export default function LocaleSwitcher() {
     function onLocaleClick(nextLocale: string) {
         if (nextLocale === locale) return;
         router.replace(
-            // @ts-expect-error
+            // @ts-expect-error this is typescript constrain
             { pathname, params },
             { locale: nextLocale }
         );

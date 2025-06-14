@@ -1,5 +1,5 @@
 
-import { makeStyles, shorthands } from "@griffel/react"
+import { makeStyles } from "@griffel/react"
 
 export const useStyle = makeStyles({
     page: {
