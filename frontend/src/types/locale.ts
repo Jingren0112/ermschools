@@ -1,0 +1,1 @@
+export type AppLocale = "en-us" | "zh-cn" | string

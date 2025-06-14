@@ -22,6 +22,7 @@ export const useStyle = makeStyles({
         backgroundColor: 'transparent',
         color: 'black',
         border: 'none',
+        cursor: 'pointer',
         '&:hover': {
             borderBottomStyle: 'solid',
         }
@@ -30,11 +31,6 @@ export const useStyle = makeStyles({
         display: 'flex',
         flexDirection: 'row',
         gap: '0.5rem'
-    },
-    linkText: {
-        fontSize: '1rem',
-        lineHeight: '100%',
-        color: '#757575'
     },
     menuActionButtonGroup: {
         display: 'flex',
@@ -48,7 +44,11 @@ export const useStyle = makeStyles({
         color: 'white',
         borderRadius: '0.5rem',
         padding: '1.5rem, 1.5rem, 0.5rem, 0.5rem',
-        border: 'none'
+        border: 'none',
+        cursor: 'pointer',
+        '&:hover': {
+            backgroundColor: '#D77B2A'
+        }
     },
     donateButton: {
         minWidth: '5rem',
@@ -57,6 +57,10 @@ export const useStyle = makeStyles({
         color: 'white',
         borderRadius: '0.5rem',
         padding: '1.5rem, 1.5rem, 0.5rem, 0.5rem',
-        border: 'none'
+        border: 'none',
+        cursor: 'pointer',
+        '&:hover': {
+            backgroundColor: '#2F5A2B'
+        }
     }
 })

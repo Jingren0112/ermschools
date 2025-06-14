@@ -1,6 +1,4 @@
-'use strict'
-import str from './string.json'
-
+// This file contains the footer content structure and the keys for localization.
 export interface footerContent {
     header: string,
     body1: string,
@@ -9,26 +7,27 @@ export interface footerContent {
     body4: string
 }
 
+// Instead of storing localized strings, store the keys for each field
 export const footerContent: footerContent[] = [
     {
-        header: str.footer1Header['en-us'],
-        body1: str.footer1Body1['en-us'],
-        body2: str.footer1Body2['en-us'],
-        body3: str.footer1Body3['en-us'],
-        body4: str.footer1Body4['en-us']
+        header: "footer1Header",
+        body1: "footer1Body1",
+        body2: "footer1Body2",
+        body3: "footer1Body3",
+        body4: "footer1Body4"
     },
     {
-        header: str.footer2Header['en-us'],
-        body1: str.footer2Body1['en-us'],
-        body2: str.footer2Body2['en-us'],
-        body3: str.footer2Body3['en-us'],
-        body4: str.footer2Body4['en-us']
+        header: "footer2Header",
+        body1: "footer2Body1",
+        body2: "footer2Body2",
+        body3: "footer2Body3",
+        body4: "footer2Body4"
     },
     {
-        header: str.footer3Header['en-us'],
-        body1: str.footer3Body1['en-us'],
-        body2: str.footer3Body2['en-us'],
-        body3: str.footer3Body3['en-us'],
-        body4: str.footer3Body4['en-us']
+        header: "footer3Header",
+        body1: "footer3Body1",
+        body2: "footer3Body2",
+        body3: "footer3Body3",
+        body4: "footer3Body4"
     }
 ]
