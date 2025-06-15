@@ -23,6 +23,10 @@ export const useStyle = makeStyles({
         textAlign: 'center',
         margin: '2rem 0 1.5rem 0',
         color: '#222',
+        '@media (max-width: 600px)': {
+            fontSize: '1.5rem',
+            margin: '1.2rem 0 1rem 0',
+        },
     },
     visionCard: {
         width: '90%',
@@ -33,17 +37,27 @@ export const useStyle = makeStyles({
         padding: '1.2rem 1.5rem',
         marginBottom: '1.5rem',
         boxShadow: '0 1px 4px rgba(0,0,0,0.03)',
+        '@media (max-width: 600px)': {
+            padding: '0.7rem 0.5rem',
+            marginBottom: '1rem',
+        },
     },
     visionTitle: {
         fontWeight: 600,
         fontSize: '1.1rem',
         marginBottom: '0.4rem',
         color: '#222',
+        '@media (max-width: 600px)': {
+            fontSize: '1rem',
+        },
     },
     visionDesc: {
         fontSize: '1rem',
         color: '#444',
         lineHeight: 1.6,
+        '@media (max-width: 600px)': {
+            fontSize: '0.95rem',
+        },
     },
     shopContent: {
         display: 'flex',
@@ -53,6 +67,16 @@ export const useStyle = makeStyles({
         gap: '2rem',
         alignItems: 'flex-start',
         justifyContent: 'center',
+        '@media (max-width: 900px)': {
+            flexDirection: 'column',
+            gap: '1.5rem',
+            width: '98%',
+        },
+        '@media (max-width: 600px)': {
+            flexDirection: 'column',
+            gap: '1rem',
+            width: '100%',
+        },
     },
     cartSection: {
         minWidth: '260px',
@@ -61,6 +85,18 @@ export const useStyle = makeStyles({
         display: 'flex',
         flexDirection: 'column',
         gap: '1rem',
+        '@media (max-width: 900px)': {
+            width: '100%',
+            minWidth: '0',
+            maxWidth: '100%',
+            order: 2,
+        },
+        '@media (max-width: 600px)': {
+            width: '100%',
+            minWidth: '0',
+            maxWidth: '100%',
+            order: 2,
+        },
     },
     cartCard: {
         background: '#fff',
@@ -71,18 +107,27 @@ export const useStyle = makeStyles({
         display: 'flex',
         flexDirection: 'column',
         gap: '1rem',
+        '@media (max-width: 600px)': {
+            padding: '1rem 0.5rem',
+        },
     },
     cartLabel: {
         fontWeight: 500,
         fontSize: '1rem',
         color: '#222',
         marginBottom: '0.2rem',
+        '@media (max-width: 600px)': {
+            fontSize: '0.95rem',
+        },
     },
     cartAmount: {
         fontWeight: 700,
         fontSize: '2rem',
         color: '#387A3D',
         marginBottom: '0.5rem',
+        '@media (max-width: 600px)': {
+            fontSize: '1.3rem',
+        },
     },
     cartCheckout: {
         backgroundColor: '#E88D31',
@@ -97,6 +142,10 @@ export const useStyle = makeStyles({
         transition: 'background 0.2s',
         ':hover': {
             backgroundColor: '#d07b28',
+        },
+        '@media (max-width: 600px)': {
+            fontSize: '1rem',
+            padding: '0.5rem 0',
         },
     },
     cartDonate: {
@@ -113,12 +162,19 @@ export const useStyle = makeStyles({
         ':hover': {
             backgroundColor: '#2F5A2B',
         },
+        '@media (max-width: 600px)': {
+            fontSize: '1rem',
+            padding: '0.5rem 0',
+        },
     },
     cartItemsHeader: {
         fontWeight: 500,
         fontSize: '1rem',
         color: '#222',
         marginBottom: '0.2rem',
+        '@media (max-width: 600px)': {
+            fontSize: '0.95rem',
+        },
     },
     cartItem: {
         display: 'flex',
@@ -130,20 +186,35 @@ export const useStyle = makeStyles({
         marginBottom: '0.5rem',
         background: '#fafbfc',
         gap: '0.5rem',
+        '@media (max-width: 600px)': {
+            flexDirection: 'column',
+            alignItems: 'flex-start',
+            gap: '0.2rem',
+            padding: '0.4rem 0.3rem',
+        },
     },
     cartItemName: {
         fontWeight: 600,
         fontSize: '1rem',
         color: '#222',
+        '@media (max-width: 600px)': {
+            fontSize: '0.95rem',
+        },
     },
     cartItemDesc: {
         fontSize: '0.95rem',
         color: '#757575',
+        '@media (max-width: 600px)': {
+            fontSize: '0.9rem',
+        },
     },
     cartItemQty: {
         display: 'flex',
         alignItems: 'center',
         gap: '0.3rem',
+        '@media (max-width: 600px)': {
+            gap: '0.15rem',
+        },
     },
     qtyBtn: {
         background: '#f3f3f3',
@@ -158,6 +229,11 @@ export const useStyle = makeStyles({
         ':hover': {
             background: '#e0e0e0',
         },
+        '@media (max-width: 600px)': {
+            width: '1.2rem',
+            height: '1.2rem',
+            fontSize: '0.95rem',
+        },
     },
     cartItemRemove: {
         background: 'none',
@@ -169,12 +245,22 @@ export const useStyle = makeStyles({
         ':hover': {
             color: '#E88D31',
         },
+        '@media (max-width: 600px)': {
+            fontSize: '1rem',
+            marginLeft: '0.2rem',
+        },
     },
     productsSection: {
         flex: 1,
         display: 'flex',
         flexDirection: 'column',
         gap: '1.5rem',
+        '@media (max-width: 900px)': {
+            width: '100%',
+        },
+        '@media (max-width: 600px)': {
+            width: '100%',
+        },
     },
     productsHeader: {
         display: 'flex',
@@ -182,6 +268,11 @@ export const useStyle = makeStyles({
         justifyContent: 'space-between',
         gap: '1rem',
         marginBottom: '1rem',
+        '@media (max-width: 600px)': {
+            flexDirection: 'column',
+            alignItems: 'stretch',
+            gap: '0.5rem',
+        },
     },
     searchInput: {
         border: '1px solid #E0E0E0',
@@ -194,10 +285,19 @@ export const useStyle = makeStyles({
         ':focus': {
             border: '1.5px solid #E88D31',
         },
+        '@media (max-width: 600px)': {
+            width: '100%',
+            marginRight: 0,
+            fontSize: '0.95rem',
+        },
     },
     filterGroup: {
         display: 'flex',
         gap: '0.5rem',
+        '@media (max-width: 600px)': {
+            gap: '0.3rem',
+            flexWrap: 'wrap',
+        },
     },
     filterBtn: {
         background: '#f3f3f3',
@@ -211,6 +311,10 @@ export const useStyle = makeStyles({
         ':hover': {
             background: '#e0e0e0',
         },
+        '@media (max-width: 600px)': {
+            fontSize: '0.95rem',
+            padding: '0.4rem 0.7rem',
+        },
     },
     filterBtnActive: {
         background: '#222',
@@ -221,6 +325,10 @@ export const useStyle = makeStyles({
         fontSize: '1rem',
         fontWeight: 600,
         cursor: 'pointer',
+        '@media (max-width: 600px)': {
+            fontSize: '0.95rem',
+            padding: '0.4rem 0.7rem',
+        },
     },
     productsGrid: {
         display: 'grid',
@@ -228,6 +336,13 @@ export const useStyle = makeStyles({
         gap: '1.5rem',
         width: '100%',
         marginTop: '1rem',
+        '@media (max-width: 900px)': {
+            gap: '1rem',
+        },
+        '@media (max-width: 600px)': {
+            gridTemplateColumns: '1fr',
+            gap: '0.7rem',
+        },
     },
     productCard: {
         border: '1px solid #E0E0E0',
@@ -240,6 +355,9 @@ export const useStyle = makeStyles({
         gap: '0.5rem',
         boxShadow: '0 1px 4px rgba(0,0,0,0.03)',
         position: 'relative',
+        '@media (max-width: 600px)': {
+            padding: '0.7rem 0.3rem',
+        },
     },
     productImg: {
         width: '100%',
@@ -247,24 +365,36 @@ export const useStyle = makeStyles({
         objectFit: 'cover',
         borderRadius: '0.5rem',
         marginBottom: '0.5rem',
+        '@media (max-width: 600px)': {
+            height: '100px',
+        },
     },
     productName: {
         fontWeight: 600,
         fontSize: '1.1rem',
         color: '#222',
         textAlign: 'center',
+        '@media (max-width: 600px)': {
+            fontSize: '1rem',
+        },
     },
     productPrice: {
         color: '#387A3D',
         fontWeight: 700,
         fontSize: '1rem',
         marginBottom: '0.2rem',
+        '@media (max-width: 600px)': {
+            fontSize: '0.95rem',
+        },
     },
     productDesc: {
         color: '#757575',
         fontSize: '0.98rem',
         textAlign: 'center',
         marginBottom: '0.5rem',
+        '@media (max-width: 600px)': {
+            fontSize: '0.9rem',
+        },
     },
     addToCartBtn: {
         position: 'absolute',
@@ -283,6 +413,13 @@ export const useStyle = makeStyles({
         justifyContent: 'center',
         ':hover': {
             background: '#d07b28',
+        },
+        '@media (max-width: 600px)': {
+            width: '1.7rem',
+            height: '1.7rem',
+            fontSize: '1rem',
+            bottom: '0.5rem',
+            right: '0.5rem',
         },
     },
 })
